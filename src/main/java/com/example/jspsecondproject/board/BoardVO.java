@@ -1,4 +1,4 @@
-package com.crud.bean;
+package com.example.jspsecondproject.board;
 
 import java.util.Date;
 

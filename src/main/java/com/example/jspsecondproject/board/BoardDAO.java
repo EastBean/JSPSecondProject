@@ -1,4 +1,4 @@
-package com.crud.dao;
+package com.example.jspsecondproject.board;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.crud.bean.BoardVO;
-import com.crud.common.JDBCUtil;
+import com.example.jspsecondproject.board.BoardVO;
+import com.example.jspsecondproject.util.JDBCUtil;
 
 public class BoardDAO {
 	

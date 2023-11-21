@@ -1,4 +1,4 @@
-package com.example.jspsecondproject;
+package com.example.jspsecondproject.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
