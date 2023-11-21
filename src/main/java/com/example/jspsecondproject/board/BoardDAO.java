@@ -15,8 +15,8 @@ public class BoardDAO {
 	PreparedStatement stmt = null;
 	ResultSet rs = null;
 
-	private final String BOARD_INSERT = "insert into BOARD (title, writer, content) values (?,?,?)";
-	private final String BOARD_UPDATE = "update BOARD set title=?, writer=?, content=? where seq=?";
+	private final String BOARD_INSERT = "insert into BOARD (title, writer, content, category) values (?,?,?,?)";
+	private final String BOARD_UPDATE = "update BOARD set title=?, writer=?, content=?, category=? where seq=?";
 	private final String BOARD_DELETE = "delete from BOARD  where seq=?";
 	private final String BOARD_GET = "select * from BOARD  where seq=?";
 	private final String BOARD_LIST = "select * from BOARD order by seq desc";
@@ -29,6 +29,7 @@ public class BoardDAO {
 			stmt.setString(1, vo.getTitle());
 			stmt.setString(2, vo.getWriter());
 			stmt.setString(3, vo.getContent());
+			stmt.setString(4, vo.getCategory());
 			stmt.executeUpdate();
 			return 1;
 		} catch (Exception e) {
@@ -57,10 +58,11 @@ public class BoardDAO {
 			stmt.setString(1, vo.getTitle());
 			stmt.setString(2, vo.getWriter());
 			stmt.setString(3, vo.getContent());
-			stmt.setInt(4, vo.getSeq());
+			stmt.setString(4, vo.getCategory());
+			stmt.setInt(5, vo.getSeq());
 			
 			
-			System.out.println(vo.getTitle() + "-" + vo.getWriter() + "-" + vo.getContent() + "-" + vo.getSeq());
+			System.out.println(vo.getTitle() + "-" + vo.getWriter() + "-" + vo.getContent() + "-" + vo.getCategory() + "-" + vo.getSeq());
 			stmt.executeUpdate();
 			return 1;
 			
@@ -83,6 +85,7 @@ public class BoardDAO {
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
+				one.setCategory(rs.getString("category"));
 				one.setCnt(rs.getInt("cnt"));
 			}
 			rs.close();
@@ -91,7 +94,7 @@ public class BoardDAO {
 		}
 		return one;
 	}
-	
+
 	public List<BoardVO> getBoardList(){
 		List<BoardVO> list = new ArrayList<BoardVO>();
 		System.out.println("===> JDBC로 getBoardList() 기능 처리");
@@ -105,6 +108,7 @@ public class BoardDAO {
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
+				one.setCategory(rs.getString("category"));
 				one.setRegdate(rs.getDate("regdate"));
 				one.setCnt(rs.getInt("cnt"));
 				list.add(one);
