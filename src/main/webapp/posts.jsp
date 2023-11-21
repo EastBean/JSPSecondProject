@@ -179,7 +179,7 @@
 <c:forEach items="${list}" var="u">
 	<tr class="box">
 		<td>${u.getSeq()}</td>
-		<td>${u.getTitle()}</td>
+		<td onclick="location.href='view.jsp?id=${u.getSeq()}'">${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>

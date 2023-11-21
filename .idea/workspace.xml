@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ffbf763-3d40-4886-acd1-b0bcbcedc0b1" name="Changes" comment="update files">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspsecondproject/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jspsecondproject/board/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspsecondproject/board/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jspsecondproject/board/BoardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/posts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -112,6 +107,9 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49429" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -164,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699925324816</updated>
       <workItem from="1699925326031" duration="3172000" />
-      <workItem from="1699942550092" duration="18517000" />
+      <workItem from="1699942550092" duration="19909000" />
     </task>
     <task id="LOCAL-00001" summary="update files">
       <option name="closed" value="true" />
@@ -182,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700545269096</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update files">
+      <option name="closed" value="true" />
+      <created>1700585600787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700585600788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
