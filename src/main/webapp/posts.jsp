@@ -186,7 +186,7 @@
 		<td>${u.getCategory()}</td>
 		<td class="menu">
 			<img class="edit-img" src="./images/edit.png" alt="수정" onclick="location.href='editform.jsp?id=${u.getSeq()}'">
-			<img class="delete-img" src="./images/delete.png" alt="삭제" onclick="location.href='javascript:delete_ok('${u.getSeq()}')'">
+			<img class="delete-img" src="./images/delete.png" alt="삭제" onclick="location.href='deletepost.jsp?id=${u.getSeq()}'">
 		</td>
 <%--		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>--%>
 <%--		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>--%>
